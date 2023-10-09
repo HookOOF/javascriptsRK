@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th</title> 
+    <link href="https://e-learning.bmstu.ru/iu6/pluginfile.php/16891/mod_resource/content/1/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="4_js.js"></script>
+    <style>
+
+    .hidden {
+    display: none;
+    }
+    table,tr, td, th
+      {
+        border: 1px solid black;
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+              <th colspan="2">Registration</th>
+            </tr>
+            <tr>
+              <td>Product id:</td>
+              <td><input type="text" name="name" id="1_1" onFocus='this.value="";'></td>
+            </tr>
+            <tr>    
+              <td>Price:</td>
+              <td><input type="text" name="name"id="1_2" onFocus='this.value="";'></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button type="submit" name="button" value="reg" id="submit">Submit</button>
+              </td>
+            </tr>
+          </table>
+    </div>  
+    <div id="1" class="hidden">
+        <table>
+            <tbody id="rowcollector">
+            <tr>
+                <th ><strong>Product id</strong></th>
+                <th ><strong>Price</strong></th>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <button id="start">Check total value of the order</button>
+    <div id="2" class="hidden">
+        <table>
+            <tr>
+                <th>Total</th>
+                <td id="2_1"> </td>
+            </tr>
+        </table>
+    </div>  
+    <div id="3" class="">
+      <table id="3_1">
+        <tr>
+          <th colspan="2" onclick="changeCellColor(this)">order</th>
+        </tr>
+        
+      </table>
+    </div>
+</body>
+</html>
