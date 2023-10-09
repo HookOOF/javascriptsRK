@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded',function() {
     var newRow = document.createElement("tr");
     var cell1 = document.createElement("td");
@@ -23,6 +24,9 @@ document.addEventListener('DOMContentLoaded',function() {
         }
         if (!flag)
             splitted_text[fstentry]=minn;
+        else{
+            splitted_text.unshift(minn);
+        }
         var result = splitted_text.join(' ');
         cell1.textContent = result;
     }
