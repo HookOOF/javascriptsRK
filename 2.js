@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded',function() {
     var newRow = document.createElement("tr");
     var newRow2 = document.createElement("tr");
+    var newRow3 = document.createElement("tr");
     var cell1 = document.createElement("td");
     var cell2 = document.createElement("td");
+    var cell3 = document.createElement("td");
     newRow.appendChild(cell1);
     newRow2.appendChild(cell2);
+    newRow3.appendChild(cell3);
     document.getElementById("tabb").appendChild(newRow);
     document.getElementById("tabb").appendChild(newRow2);
+    document.getElementById("tabb").appendChild(newRow3);
     document.getElementById("start").onclick = function (o) {
         var maxx = 0 ;
         var fstentry;
@@ -49,5 +53,6 @@ document.addEventListener('DOMContentLoaded',function() {
         var result = splitted_text.join(' ');
         cell1.textContent = result+" -Changed array";
         cell2.textContent = indexes.join(' ')+" -Indexes";
+        cell3.textContent = maxx+" -Summ"
     }
 });
